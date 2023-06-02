@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "complaint-prediction"
+version = "0.1.0"
+description = "Using NLP & ML prediction where a dispute was raised on the bases of the complaint and other features."
+authors = ["Sheiphan <sheiphanshaijan@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "complaint_prediction"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.24"
+pandas = "^1.4"
+requests = "^2.31.0"
+jupyter = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.23.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
