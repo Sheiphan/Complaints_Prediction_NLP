@@ -24,6 +24,9 @@ category-encoders = "^2.6.1"
 imblearn = "^0.0"
 hyperopt = "^0.2.7"
 setuptools = "^67.8.0"
+pymongo = "^4.3.3"
+pyspark = "^3.4.0"
+python-dotenv = "^1.0.0"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.23.1"
@@ -31,3 +34,6 @@ ipykernel = "^6.23.1"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.setuptools.packages.find]
+where = ["src"]
