@@ -5,7 +5,7 @@ description = "Using NLP & ML prediction where a dispute was raised on the bases
 authors = ["Sheiphan <sheiphanshaijan@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "complaint_prediction"}]
+packages = [{include = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -30,10 +30,17 @@ python-dotenv = "^1.0.0"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.23.1"
+black = "^23.3.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.3.2"
+
+[tool.poetry.scripts]
+showtime = "dataset.script:main"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
-[tool.setuptools.packages.find]
-where = ["src"]
+
