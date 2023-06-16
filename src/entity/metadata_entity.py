@@ -1,4 +1,4 @@
-from src.exceptions import FinanceException
+from src.exception import FinanceException
 from src.logger import logging
 from collections import namedtuple
 import os
@@ -10,8 +10,6 @@ DataIngestionMetadataInfo = namedtuple(
     ["from_date", "to_date", "data_file_path"])
 
 class DataIngestionMetadata:
-
-    
     def __init__(self, metadata_file_path,):
         self.metadata_file_path = metadata_file_path
         

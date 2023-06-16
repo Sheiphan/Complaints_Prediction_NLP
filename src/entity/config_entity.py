@@ -27,6 +27,7 @@ class TrainingPipelineConfig:
 
 #Data Ingestion Config
 class DataIngestionConfig:
+    
     def __init__(self,training_pipeline_config:TrainingPipelineConfig,
                         from_date=DATA_INGESTION_MIN_START_DATE,
                         to_date=None):
@@ -56,4 +57,4 @@ class DataIngestionConfig:
             self.feature_store_dir=os.path.join(data_ingestion_master_dir, DATA_INGESTION_FEATURE_STORE_DIR)
             self.datasource_url = DATA_INGESTION_DATA_SOURCE_URL
         except Exception as e:
-            raise FinanceException(e,sys)
+            raise FinanceException(e,sys) 
